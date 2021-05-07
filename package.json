@@ -1,0 +1,14 @@
+{
+  "name": "pomodoro-timer",
+  "version": "1.0.0",
+  "description": "A timer that is  set for 25 minutes for work or study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": " <David Guerrero>",
+  "license": "MIT",
+  "dependencies": {
+    "express-handlebars": "^5.3.2"
+  }
+}
