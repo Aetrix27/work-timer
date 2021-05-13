@@ -53,7 +53,7 @@ const callTimer = (minutes) => {
 
 }
 
-module.exports = function(){ 
+module.exports = { 
 
    callTimer
     
