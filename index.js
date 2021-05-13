@@ -50,7 +50,6 @@ module.exports = function(minutes){
         stopped = false
     }
     
-    
 }
 
 //Module Test
