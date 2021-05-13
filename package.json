@@ -1,5 +1,5 @@
 {
-  "name": "pomodoro-timer",
+  "name": "work-timer",
   "version": "1.0.0",
   "description": "A timer that is  set for 25 minutes for work or study",
   "main": "index.js",
