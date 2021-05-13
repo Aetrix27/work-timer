@@ -1,6 +1,6 @@
 {
   "name": "work-timer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A timer that is  set for 25 minutes for work or study",
   "main": "index.js",
   "scripts": {
