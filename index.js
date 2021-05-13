@@ -1,11 +1,10 @@
 var keypress = require('keypress');
 
-module.exports = function(){
-    //
-    var timerInterval = setInterval(runTimer, 100);
+module.exports = function(minutes){ 
+
+    var timerInterval = setInterval(runTimer, 1000);
     var stopped = false
     var num = 0
-    var minutes = 1
 
     function runTimer(){
         if(stopped == false){
@@ -23,7 +22,7 @@ module.exports = function(){
             }else if(num <= 10 && num!=0){
                 num--
                 console.log(minutes+":0"+num);
-           
+        
             }
         }
         
@@ -50,8 +49,9 @@ module.exports = function(){
     if (stopped == true){
         stopped = false
     }
-
+    
     
 }
 
-module.exports()
+//Module Test
+module.exports(1)
