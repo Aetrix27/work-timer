@@ -7,5 +7,6 @@ The number of minutes can be set by the user.
 
 Call Timer by requiring the module and setting it to a variable. Then set the number of minutes as the parameter.
 
-const { callTimer } = require('work_timer');
+const { callTimer } = require('work-timer');
+
 callTimer(1); //Starts the work timer for one minute.
