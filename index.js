@@ -1,7 +1,6 @@
 var keypress = require('keypress');
 
-module.exports = function(minutes){ 
-
+const callTimer = (minutes) => {
     var timerInterval = setInterval(runTimer, 1000);
     var stopped = false
     var num = 0
@@ -32,12 +31,14 @@ module.exports = function(minutes){
     
     // listen for the "keypress" event
     process.stdin.on('keypress', function (ch, key) {
-        console.log('got "keypress"', key);
+  
         if (key && key.name == 'space') {
             if(stopped == false){
                 stopped = true
+                console.log("PAUSED");
             }else if(stopped == true){
                 stopped = false
+                console.log("RESUMED");
             }
         
         }
@@ -49,8 +50,14 @@ module.exports = function(minutes){
     if (stopped == true){
         stopped = false
     }
+
+}
+
+module.exports = function(){ 
+
+   callTimer
     
 }
 
 //Module Test
-module.exports(1)
+callTimer(1)
